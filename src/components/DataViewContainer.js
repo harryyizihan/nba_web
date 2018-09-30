@@ -1,10 +1,13 @@
 import React from 'react';
 import {ShotChart} from './ShotChart'
-import {Slider, InputNumber, Row, Col } from 'antd'
+import {Slider, InputNumber, Row, Col, Radio } from 'antd'
+
+const RadioGroup = Radio.Group;
 
 export class DataViewContainer extends React.Component {
     state = {
         minCount: 1,
+        chartType: "hexbin",
     }
 
     onChange = (value) => {
@@ -13,9 +16,15 @@ export class DataViewContainer extends React.Component {
         });
     }
 
+    onChartTypeChange = (e) => {
+        this.setState({
+            chartType: e.target.value
+        });
+    }
+
 
     render () {
-        const {minCount} = this.state;
+        const {minCount, chartType} = this.state;
 
         return (
             <div className="data-view">
@@ -23,7 +32,7 @@ export class DataViewContainer extends React.Component {
                     playerId={this.props.playerId}
                     minCount={minCount}
                     displayToolTips={true}
-                    chartType={"hexbin"}
+                    chartType={chartType}
                 />
                 <Row>
                     <Col span={12} offset={4}>
@@ -39,6 +48,11 @@ export class DataViewContainer extends React.Component {
                         />
                     </Col>
                 </Row>
+
+                <RadioGroup onChange={this.onChartTypeChange} value={chartType}>
+                    <Radio value="hexbin">Hexbin</Radio>
+                    <Radio value="scatter">Scatter</Radio>
+                </RadioGroup>
             </div>
         );
     }

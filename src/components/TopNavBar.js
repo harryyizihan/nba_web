@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../assets/nba-logoman-word-white.svg';
-import '../styles/TopNavBar.css';
 
 export class TopNavBar extends React.Component {
     render() {

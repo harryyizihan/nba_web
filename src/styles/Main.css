@@ -1,7 +1,8 @@
 .main {
+    margin: auto;
+    display: flex;
     width: 750px;
-    border: 3px solid #cccccc;
-    margin: auto auto;
-    border-radius: 10px;
+    border: 3px solid #ccc;
     box-shadow: 5px 10px 10px #888;
+    border-radius: 10px;
 }

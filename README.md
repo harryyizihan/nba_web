@@ -3,7 +3,7 @@
 http://nba-big-data.s3-website-us-west-1.amazonaws.com/
 
 ## Description
-NBA Player Statistic Visualization Tool
+NBA Player Statistics Visualization Tool
 
 This web app is aimed at helping NBA fans understand their players better, user can search all the active players in the current season. 
 For each player, we provide the not only the basic information like height, weight, pts, ast, etc, but also the visualized shotchart 

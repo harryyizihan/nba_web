@@ -27,6 +27,7 @@ export class CountSlider extends React.Component {
                         style={{ marginLeft: 16 }}
                         value={this.state.inputValue}
                         onChange={this.onChange}
+                        placeholder="min freq."
                     />
                 </Col>
             </Row>

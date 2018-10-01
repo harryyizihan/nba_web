@@ -1,7 +1,9 @@
 .data-view {
     width: 550px;
+    background-color: white;
 }
 
 .filters {
     margin-left: 75px;
 }
+

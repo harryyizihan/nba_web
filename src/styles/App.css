@@ -9,3 +9,9 @@
 .App-intro {
   font-size: large;
 }
+
+body {
+    background-image: url("../assets/final.png");
+    background-size: 100%;
+    min-width: 600px;
+}
